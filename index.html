@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Melhor Itinerário do Novo Ensino Médio: Exatas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Por que o Itinerário de Exatas é o Melhor do Novo Ensino Médio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#skills">Habilidades Desenvolvidas</a></li>
+                <li><a href="#future">Perspectivas Futuras</a></li>
+                <li><a href="#charts">Gráficos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre o Itinerário de Exatas</h2>
+        <p>O itinerário de Exatas no Novo Ensino Médio não é apenas uma opção; é a escolha mais estratégica para alunos que buscam um futuro brilhante e repleto de oportunidades. Se você está pensando em seguir uma carreira nas áreas de Matemática, Física, Química ou Engenharia, esse itinerário foi feito sob medida para você.</p>
+        <p>Por que escolher Exatas? Em um mundo cada vez mais orientado pela tecnologia e inovação, ter uma base sólida em disciplinas exatas é essencial. O itinerário de Exatas oferece uma formação aprofundada que não apenas fortalece suas habilidades analíticas e de resolução de problemas, mas também o prepara para enfrentar os desafios mais complexos do mercado de trabalho.</p>
+        <p>Optar por Exatas significa estar à frente da concorrência. As habilidades adquiridas, como raciocínio lógico e análise de dados, são altamente valorizadas em diversas carreiras de alta demanda. Além disso, o itinerário proporciona acesso a oportunidades exclusivas de bolsas de estudo e estágios, dando-lhe uma vantagem significativa ao iniciar sua jornada acadêmica e profissional.</p>
+        <p>Este percurso educacional não apenas abre portas para cursos superiores em renomadas instituições, mas também coloca você na vanguarda da inovação e da pesquisa. Com um foco em preparar alunos para o mundo real, o itinerário de Exatas é a escolha inteligente para quem deseja não só se destacar na academia, mas também contribuir para o avanço da ciência e da tecnologia.</p>
+        <p>Não deixe passar a chance de investir no seu futuro. Com o itinerário de Exatas, você estará bem preparado para aproveitar as melhores oportunidades e transformar seus sonhos em realidade.</p>
+    </section>
+
+    <section id="benefits">
+        <h2>Benefícios do Itinerário de Exatas</h2>
+        <p>O itinerário de Exatas do Novo Ensino Médio é ideal para estudantes que têm interesse em áreas como Matemática, Física, Química e Engenharia. Aqui estão alguns dos principais benefícios:</p>
+        <ul>
+            <li><strong>Desenvolvimento de habilidades analíticas:</strong> Aprofundar-se em problemas matemáticos e científicos desenvolve o raciocínio lógico e analítico.</li>
+            <li><strong>Preparação para o mercado de trabalho:</strong> Profissões em engenharia, tecnologia e ciência exigem um forte conhecimento em exatas, tornando este itinerário uma excelente base.</li>
+            <li><strong>Oportunidades de bolsas e estágios:</strong> Estudantes com um bom desempenho em exatas têm mais chances de conseguir bolsas de estudo e estágios em instituições renomadas.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades Desenvolvidas</h2>
+        <p>Estudar disciplinas de Exatas desenvolve várias habilidades cruciais, incluindo:</p>
+        <ul>
+            <li><strong>Raciocínio Lógico:</strong> Habilidade de resolver problemas complexos com eficiência.</li>
+            <li><strong>Análise de Dados:</strong> Capacidade de interpretar e analisar informações quantitativas.</li>
+            <li><strong>Resolução de Problemas:</strong> Aptidão para identificar e resolver desafios técnicos e científicos.</li>
+        </ul>
+    </section>
+
+    <section id="future">
+        <h2>Perspectivas Futuras</h2>
+        <p>Com um itinerário de Exatas, os estudantes têm acesso a um amplo leque de oportunidades futuras:</p>
+        <ul>
+            <li><strong>Faculdades e Universidades:</strong> Preparação sólida para cursos superiores em áreas técnicas e científicas.</li>
+            <li><strong>Mercado de Trabalho:</strong> Grande demanda por profissionais qualificados em setores de tecnologia e engenharia.</li>
+            <li><strong>Inovação e Pesquisa:</strong> Possibilidade de se envolver em pesquisas e inovações em ciência e tecnologia.</li>
+        </ul>
+    </section>
+
+    <section id="charts">
+        <h2>Gráficos de Desempenho</h2>
+        <canvas id="benefitsChart" width="400" height="200"></canvas>
+        <canvas id="skillsChart" width="400" height="200"></canvas>
+    </section>
+
+    <script>
+        // Dados para o gráfico de Benefícios
+        const ctx1 = document.getElementById('benefitsChart').getContext('2d');
+        const benefitsChart = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Desenvolvimento Analítico', 'Preparação para Trabalho', 'Oportunidades de Estágio'],
+                datasets: [{
+                    label: 'Benefícios',
+                    data: [90, 80, 70], // Exemplos de dados (em porcentagem ou qualquer unidade relevante)
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Dados para o gráfico de Habilidades Desenvolvidas
+        const ctx2 = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Raciocínio Lógico', 'Análise de Dados', 'Resolução de Problemas'],
+                datasets: [{
+                    label: 'Habilidades Desenvolvidas',
+                    data: [40, 35, 25], // Exemplos de dados (em porcentagem)
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 205, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 205, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</body>
+</html>
